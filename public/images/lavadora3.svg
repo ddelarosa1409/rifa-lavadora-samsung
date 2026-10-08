@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="drumGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#1E293B" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="1" />
+    </radialGradient>
+    <radialGradient id="steelCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F1F5F9" />
+      <stop offset="40%" stop-color="#94A3B8" />
+      <stop offset="80%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="#0F172A" />
+
+  <!-- Outer Door Open Frame -->
+  <circle cx="400" cy="300" r="260" fill="#1E293B" stroke="#475569" stroke-width="4" />
+  <circle cx="400" cy="300" r="235" fill="#334155" stroke="#64748B" stroke-width="2" />
+  <!-- Gasket Rubber Seal -->
+  <circle cx="400" cy="300" r="215" fill="#1E293B" stroke="#0F172A" stroke-width="8" />
+
+  <!-- Inside Stainless Drum Cavity -->
+  <circle cx="400" cy="300" r="190" fill="url(#drumGlow)" stroke="#64748B" stroke-width="3" />
+
+  <!-- Diamond Textured Drum Holes Pattern Rings -->
+  <!-- Ring 1 -->
+  <circle cx="400" cy="300" r="160" fill="none" stroke="#64748B" stroke-width="3" stroke-dasharray="6 8" opacity="0.7" />
+  <!-- Ring 2 -->
+  <circle cx="400" cy="300" r="135" fill="none" stroke="#94A3B8" stroke-width="3" stroke-dasharray="5 7" opacity="0.6" />
+  <!-- Ring 3 -->
+  <circle cx="400" cy="300" r="110" fill="none" stroke="#CBD5E1" stroke-width="2.5" stroke-dasharray="4 6" opacity="0.8" />
+  <!-- Ring 4 -->
+  <circle cx="400" cy="300" r="85" fill="none" stroke="#E2E8F0" stroke-width="2" stroke-dasharray="4 5" opacity="0.7" />
+
+  <!-- 3 Curved Agitator Lifters (Paletas) -->
+  <path d="M 400 300 L 400 115 Q 425 150 415 300 Z" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.5" />
+  <path d="M 400 300 L 240 395 Q 285 365 400 300 Z" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.5" />
+  <path d="M 400 300 L 560 395 Q 515 365 400 300 Z" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.5" />
+
+  <!-- Center Drum Cap -->
+  <circle cx="400" cy="300" r="45" fill="url(#steelCenter)" stroke="#CBD5E1" stroke-width="2" />
+  <circle cx="400" cy="300" r="20" fill="#0F172A" />
+  <circle cx="400" cy="300" r="8" fill="#38BDF8" />
+
+  <!-- Open Door Hinge and Glass Arc on Left -->
+  <path d="M 140 200 C 60 250 60 350 140 400" stroke="#CBD5E1" stroke-width="24" stroke-linecap="round" fill="none" opacity="0.6" />
+  <circle cx="160" cy="180" r="14" fill="#64748B" stroke="#CBD5E1" stroke-width="3" />
+  <circle cx="160" cy="420" r="14" fill="#64748B" stroke="#CBD5E1" stroke-width="3" />
+
+  <!-- Clean Badge overlay -->
+  <g transform="translate(520, 70)">
+    <rect width="210" height="70" rx="12" fill="#1E293B" stroke="#0284C7" stroke-width="1.5" />
+    <text x="15" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="bold" fill="#38BDF8">DIAMOND DRUM™</text>
+    <text x="15" y="46" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#E2E8F0">Acero inoxidable higiénico</text>
+    <text x="15" y="59" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#94A3B8">Capacidad XL: 19 kg</text>
+  </g>
+
+  <!-- Tag / Watermark Indicator -->
+  <rect x="250" y="555" width="300" height="26" rx="13" fill="#1E293B" stroke="#334155" stroke-width="1" />
+  <text x="400" y="572" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#94A3B8" text-anchor="middle">Foto 3: Tambor Interior y Capacidad XL</text>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F1F5F9" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+    <linearGradient id="chrome" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#94A3B8" />
+      <stop offset="50%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#0F172A" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#1E3A8A" stop-opacity="0.8" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)" />
+
+  <!-- Shadow Floor -->
+  <ellipse cx="400" cy="545" rx="230" ry="24" fill="#0F172A" opacity="0.12" />
+
+  <!-- Machine Body -->
+  <g filter="url(#shadow)">
+    <rect x="230" y="70" width="340" height="460" rx="28" fill="url(#body)" stroke="#CBD5E1" stroke-width="3" />
+  </g>
+
+  <!-- Top Display & Drawer Area -->
+  <rect x="250" y="90" width="300" height="90" rx="14" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5" />
+  
+  <!-- Detergent Drawer -->
+  <rect x="262" y="105" width="85" height="60" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+  <rect x="290" y="148" width="30" height="6" rx="3" fill="#94A3B8" />
+  <text x="305" y="130" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="bold" fill="#64748B" text-anchor="middle">SAMSUNG</text>
+
+  <!-- Program Knob -->
+  <circle cx="400" cy="135" r="24" fill="url(#chrome)" stroke="#64748B" stroke-width="2" />
+  <circle cx="400" cy="135" r="16" fill="#F8FAFC" />
+  <rect x="398" y="115" width="4" height="10" rx="2" fill="#0284C7" />
+
+  <!-- Digital Display Panel -->
+  <rect x="450" y="105" width="90" height="60" rx="8" fill="#0F172A" />
+  <text x="495" y="132" font-family="monospace" font-size="18" font-weight="bold" fill="#38BDF8" text-anchor="middle">0:45</text>
+  <circle cx="465" cy="150" r="3" fill="#10B981" />
+  <circle cx="480" cy="150" r="3" fill="#38BDF8" />
+  <circle cx="495" cy="150" r="3" fill="#38BDF8" />
+  <circle cx="510" cy="150" r="3" fill="#E2E8F0" />
+  <text x="525" y="153" font-family="sans-serif" font-size="8" fill="#94A3B8">1400</text>
+
+  <!-- Round Big Door Outer Ring -->
+  <circle cx="400" cy="330" r="140" fill="url(#chrome)" stroke="#64748B" stroke-width="3" />
+  <!-- Door Inner Ring -->
+  <circle cx="400" cy="330" r="118" fill="#0F172A" stroke="#334155" stroke-width="4" />
+  <!-- Glass Window with reflection -->
+  <circle cx="400" cy="330" r="102" fill="url(#glass)" />
+  <path d="M 330 260 Q 440 240 480 320 A 102 102 0 0 0 330 260 Z" fill="#FFFFFF" opacity="0.18" />
+  <!-- Drum Interior Detail -->
+  <circle cx="400" cy="330" r="75" fill="none" stroke="#60A5FA" stroke-width="2.5" stroke-dasharray="8 6" opacity="0.5" />
+  <circle cx="400" cy="330" r="45" fill="none" stroke="#93C5FD" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4" />
+  <circle cx="400" cy="330" r="14" fill="#0284C7" opacity="0.8" />
+
+  <!-- Door Handle -->
+  <rect x="522" y="305" width="10" height="50" rx="5" fill="url(#chrome)" stroke="#475569" stroke-width="1.5" />
+
+  <!-- Lower Panel Filter Door -->
+  <rect x="495" y="485" width="45" height="30" rx="4" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1" />
+  
+  <!-- EcoBubble Label Badge -->
+  <rect x="250" y="210" width="75" height="22" rx="4" fill="#0284C7" />
+  <text x="287" y="225" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF" text-anchor="middle">EcoBubble™</text>
+
+  <rect x="250" y="238" width="55" height="18" rx="4" fill="#E0F2FE" />
+  <text x="277" y="251" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="bold" fill="#0369A1" text-anchor="middle">19 KG</text>
+
+  <!-- Tag / Watermark Indicator -->
+  <rect x="260" y="555" width="280" height="26" rx="13" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+  <text x="400" y="572" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#475569" text-anchor="middle">Foto 1: Vista Frontal de la Lavadora</text>
+</svg>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#CBD5E1" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="50%" stop-color="#B45309" />
+      <stop offset="100%" stop-color="#92400E" />
+    </linearGradient>
+  </defs>
+
+  <!-- Wall -->
+  <rect width="800" height="420" fill="url(#wall)" />
+  <!-- Tiles Pattern Line -->
+  <line x1="0" y1="420" x2="800" y2="420" stroke="#94A3B8" stroke-width="3" />
+  <!-- Floor -->
+  <rect y="420" width="800" height="180" fill="url(#floor)" />
+
+  <!-- Wooden Wall Shelves Above -->
+  <rect x="180" y="70" width="440" height="16" rx="3" fill="url(#wood)" />
+  
+  <!-- Towels on Shelf -->
+  <rect x="220" y="44" width="70" height="13" rx="4" fill="#38BDF8" />
+  <rect x="224" y="31" width="62" height="13" rx="4" fill="#FFFFFF" stroke="#E2E8F0" />
+  <rect x="228" y="18" width="54" height="13" rx="4" fill="#0284C7" />
+
+  <!-- Plant on Shelf -->
+  <rect x="360" y="48" width="30" height="22" rx="4" fill="#FFFFFF" stroke="#CBD5E1" />
+  <path d="M 375 48 C 360 25 365 15 375 10 C 385 15 390 25 375 48 Z" fill="#10B981" />
+  <path d="M 375 48 C 390 30 405 25 410 32 C 405 42 390 45 375 48 Z" fill="#059669" />
+  
+  <!-- Laundry Detergent Bottle on Shelf -->
+  <rect x="460" y="28" width="28" height="42" rx="6" fill="#0284C7" />
+  <rect x="468" y="20" width="12" height="8" rx="2" fill="#38BDF8" />
+
+  <!-- Natural Window Light Stream -->
+  <polygon points="620,0 800,0 800,450 560,420" fill="#FFFFFF" opacity="0.18" />
+
+  <!-- Floor Shadow for Machine -->
+  <ellipse cx="360" cy="515" rx="140" ry="18" fill="#0F172A" opacity="0.2" />
+
+  <!-- The Washing Machine in Space -->
+  <rect x="240" y="150" width="240" height="350" rx="20" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2.5" />
+  
+  <!-- Top Panel -->
+  <rect x="250" y="165" width="220" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0" />
+  <circle cx="360" cy="195" r="16" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.5" />
+  <rect x="410" y="175" width="50" height="40" rx="6" fill="#0F172A" />
+  <text x="435" y="198" font-family="monospace" font-size="12" font-weight="bold" fill="#38BDF8" text-anchor="middle">0:45</text>
+
+  <!-- Door -->
+  <circle cx="360" cy="335" r="95" fill="#334155" stroke="#CBD5E1" stroke-width="3" />
+  <circle cx="360" cy="335" r="78" fill="#0F172A" />
+  <circle cx="360" cy="335" r="65" fill="#1E3A8A" opacity="0.85" />
+  <!-- Glass reflection -->
+  <path d="M 315 285 Q 390 270 420 325 A 65 65 0 0 0 315 285 Z" fill="#FFFFFF" opacity="0.3" />
+
+  <!-- Laundry Basket Beside -->
+  <g transform="translate(520, 340)">
+    <polygon points="20,160 10,60 110,60 100,160" fill="#FDE68A" stroke="#D97706" stroke-width="2" />
+    <line x1="25" y1="90" x2="95" y2="90" stroke="#B45309" stroke-width="1.5" stroke-dasharray="4 4" />
+    <line x1="25" y1="120" x2="95" y2="120" stroke="#B45309" stroke-width="1.5" stroke-dasharray="4 4" />
+    <!-- Clothes spilling out slightly -->
+    <path d="M 15 65 Q 40 40 60 58 Q 85 35 105 62 Z" fill="#38BDF8" />
+    <path d="M 35 55 Q 55 35 75 52 Z" fill="#FFFFFF" />
+  </g>
+
+  <!-- Tag / Watermark Indicator -->
+  <rect x="250" y="555" width="300" height="26" rx="13" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+  <text x="400" y="572" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#475569" text-anchor="middle">Foto 4: Vista en Área de Lavado Real</text>
+</svg>

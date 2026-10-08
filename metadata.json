@@ -1,0 +1,6 @@
+{
+  "name": "Rifa de Lavadora - Landing Page Móvil",
+  "description": "Landing page responsive y mobile-first para la rifa de una lavadora, optimizada para escáner QR móvil y reservas directas por WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

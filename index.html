@@ -1094,27 +1094,19 @@
 
     .organizer-avatar {
       grid-area: avatar;
-      width: 58px;
-      height: 58px;
+      width: 56px;
+      height: 56px;
       background-color: var(--bg-dark);
       color: var(--text-inverse);
       font-family: var(--font-display);
-      font-size: 1.25rem;
+      font-size: 1.45rem;
       font-weight: 700;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      overflow: hidden;
       border: 2px solid var(--border-ink);
       box-shadow: 0 4px 10px rgba(24, 22, 20, 0.12);
-    }
-
-    .organizer-avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
     }
 
     .organizer-name {
@@ -1722,9 +1714,8 @@
       </div>
 
       <div class="organizer-card">
-        <div class="organizer-avatar" id="organizerAvatarWrap">
-          <img src="images/carmen-photo.png" alt="Carmen" id="organizerPhotoImg" onerror="this.style.display='none'; document.getElementById('organizerInitials').style.display='flex';" />
-          <span id="organizerInitials" style="display:none;">C</span>
+        <div class="organizer-avatar" id="organizerAvatarWrap" aria-label="Carmen">
+          <span id="organizerInitials">C</span>
         </div>
         <h3 class="organizer-name" id="organizerName">Carmen</h3>
         <p class="organizer-handle" id="organizerHandle">@carmenm.caba</p>
@@ -1839,7 +1830,6 @@
       organizadorNombre: "Carmen",
       organizadorUsuario: "@carmenm.caba",
       organizadorRol: "Venta Oficial de Boletos & Entrega",
-      organizadorFoto: "images/carmen-photo.png",
       organizadorTelefonoVisible: "+1 (849) 201-8591",
       organizadorTelefonoWhatsApp: "18492018591",
       mensajeWhatsAppBase: "Hola Carmen, quiero participar en la rifa de la lavadora Samsung de 22kg.",
@@ -1964,10 +1954,8 @@
       const footerOrg = document.getElementById("footerOrganizer");
       if (footerOrg) footerOrg.textContent = `Rifa organizada por ${CONFIG.organizadorNombre} (${CONFIG.organizadorUsuario})`;
 
-      const orgPhoto = document.getElementById("organizerPhotoImg");
-      if (orgPhoto && CONFIG.organizadorFoto) {
-        orgPhoto.src = CONFIG.organizadorFoto;
-      }
+      const orgInitials = document.getElementById("organizerInitials");
+      if (orgInitials) orgInitials.textContent = "C";
 
       // 4. Enlaces de WhatsApp y Teléfono
       let waPhone = CONFIG.organizadorTelefonoWhatsApp.replace(/\D/g, "");
